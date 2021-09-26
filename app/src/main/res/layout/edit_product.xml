@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/curved_white"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="@dimen/margin_size_20dp"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_size_24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gotham_medium"
+        android:text="EDIT PRODUCT"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/text_size_16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_size_10dp"
+        android:layout_marginTop="@dimen/margin_size_24dp"
+        android:layout_marginEnd="@dimen/margin_size_10dp"
+        android:background="@drawable/curved_white_black_border"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_size_24dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_size_10dp">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/iciel_gotham_medium"
+                android:text="Price"
+                android:textColor="@color/black_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=":"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/edtPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin_size_8dp"
+                android:background="@color/white"
+                android:fontFamily="@font/iciel_gotham_medium"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_size_10dp">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/iciel_gotham_medium"
+                android:text="Special Price"
+                android:textColor="@color/black_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=":"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/edtspecialPrize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin_size_8dp"
+                android:background="@color/white"
+                android:fontFamily="@font/iciel_gotham_medium"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_size_10dp">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/iciel_gotham_medium"
+                android:text="Discount"
+                android:textColor="@color/black_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=":"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/edtDiscount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin_size_8dp"
+                android:background="@color/white"
+                android:fontFamily="@font/iciel_gotham_medium"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="2"
+                android:maxLines="1"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/rank_dialog_button"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="@dimen/margin_size_20dp"
+        android:background="@drawable/btn_bg"
+        android:focusable="false"
+        android:fontFamily="@font/gotham_medium"
+        android:gravity="center"
+        android:text="Update"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16sp" />
+
+</LinearLayout>

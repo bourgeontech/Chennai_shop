@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.ReportActivity">
+
+        <RelativeLayout
+            android:id="@+id/topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/yellow_ring_bg" />
+
+
+            <RelativeLayout
+                android:id="@+id/topBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_size_16dp"
+                android:layout_marginTop="@dimen/margin_size_20dp"
+                android:layout_marginEnd="@dimen/margin_size_20dp">
+
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="@dimen/margin_size_10dp"
+                    android:rotation="180"
+                    android:src="@drawable/forward_arrow"
+                    app:tint="@color/blue" />
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/edtSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/margin_size_24dp"
+                android:layout_marginEnd="60dp"
+                android:background="@drawable/curved_white"
+                android:drawableStart="@drawable/search_icon"
+                android:drawablePadding="@dimen/margin_size_24dp"
+                android:fontFamily="@font/iciel_gotham_medium"
+                android:hint="search categories"
+                android:padding="@dimen/padding_size_12dp"
+                android:textSize="@dimen/text_size_14sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/selectDateLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/margin_size_24dp"
+                android:layout_marginEnd="@dimen/margin_size_24dp"
+                android:layout_marginBottom="75dp"
+                android:visibility="visible">
+
+
+                <TextView
+                    android:id="@+id/tvDate1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_size_10dp"
+                    android:fontFamily="@font/iciel_gotham_medium"
+                    android:maxLines="1"
+                    android:text="From Date"
+                    android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+                    android:textColor="@color/blue" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/selectDateLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/margin_size_24dp"
+                android:layout_marginEnd="@dimen/margin_size_24dp"
+                android:layout_marginBottom="30dp"
+                android:visibility="visible">
+                <TextView
+                    android:id="@+id/tvDate2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_size_10dp"
+                    android:fontFamily="@font/iciel_gotham_medium"
+                    android:maxLines="1"
+                    android:text="To Date"
+                    android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/titleImage"
+            android:layout_marginTop="@dimen/margin_size_16dp"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/padding_size_16dp"
+            android:paddingEnd="@dimen/padding_size_16dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/undelivered_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/baukasten_book"
+                        android:gravity="center"
+                        android:text="Fast Selling products"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/text_size_16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/undelivered_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/baukasten_book"
+                        android:gravity="center"
+                        android:text="Total Orders"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/text_size_16sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/undelivered_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/baukasten_book"
+                        android:gravity="center"
+                        android:text="Date wise order summary"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/text_size_16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/undelivered_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/baukasten_book"
+                        android:gravity="center"
+                        android:text="COD Deliveries"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/text_size_16sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/undelivered_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/baukasten_book"
+                        android:gravity="center"
+                        android:text="Paid Deliveries"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/text_size_16sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/titlelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topLayout"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/light_gray"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tvNum"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/baukasten_book"
+                    android:padding="@dimen/padding_size_8dp"
+                    android:text="No"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:id="@+id/tvCustomer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/baukasten_book"
+                    android:padding="@dimen/padding_size_8dp"
+                    android:text="Customer"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:id="@+id/tvProduct"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.5"
+                    android:fontFamily="@font/baukasten_book"
+                    android:padding="@dimen/padding_size_8dp"
+                    android:text="Product"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:id="@+id/tvQuantity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/baukasten_book"
+                    android:padding="@dimen/padding_size_8dp"
+                    android:text="Qty"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/baukasten_book"
+                    android:padding="@dimen/padding_size_8dp"
+                    android:text="Price"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recylerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titlelayout"
+            android:clipToPadding="false"
+            android:layoutAnimation="@anim/layout_animation"
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="always"
+            android:paddingBottom="@dimen/padding_size_16dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <TextView
+            android:id="@+id/titleImage"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/topLayout"
+            android:layout_marginStart="@dimen/margin_size_24dp"
+            android:layout_marginTop="-25dp"
+            android:layout_marginEnd="@dimen/margin_size_24dp"
+            android:background="@drawable/curved_blue"
+            android:fontFamily="@font/iciel_gotham_medium"
+            android:gravity="center"
+            android:padding="@dimen/padding_6dp"
+            android:text="Sales reports"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_19sp" />
+
+        <LinearLayout
+            android:id="@+id/emptyLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleImage"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/login_bg2"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvEmpty"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_size_24dp"
+                android:fontFamily="@font/baukasten_book"
+                android:gravity="center"
+                android:padding="@dimen/padding_size_12dp"
+                android:text="No Reports..."
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size_19sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

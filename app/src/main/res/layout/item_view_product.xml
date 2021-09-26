@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_size_20dp"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/margin_size_20dp"
+            android:paddingEnd="@dimen/margin_size_20dp">
+
+
+            <ImageView
+                android:id="@+id/productImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/curved_white_yellow_border"
+                android:padding="2dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="top"
+                android:layout_marginStart="@dimen/margin_size_12dp"
+                android:layout_toEndOf="@id/productImage"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/productName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/homepagebaukasten_bold"
+                    android:maxLines="1"
+                    android:text="Biriyani Rice"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp">
+
+                    <TextView
+                        android:id="@+id/tvDiscount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/homepagebaukasten_book"
+                        android:text="Save 24%"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/text_size_10sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/padding_6dp"
+                        android:fontFamily="@font/homepagebaukasten_book"
+                        android:text="(Incl. of all taxes)"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/text_size_10sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp">
+
+                    <TextView
+                        android:id="@+id/tvOriginalPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/homepagebaukasten_book"
+                        android:text="Rs 340"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/text_size_12sp" />
+
+                    <TextView
+                        android:id="@+id/tvSpecialPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/padding_6dp"
+                        android:fontFamily="@font/homepagebaukasten_book"
+                        android:text="Rs 340"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_4dp"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:background="@drawable/curved_yellow"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/margin_size_20dp"
+                                android:background="@drawable/circle_white"
+                                android:gravity="center"
+                                android:padding="@dimen/margin_size_12dp"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="28dp"
+                                android:text="-" />
+                        </RelativeLayout>
+
+
+                        <TextView
+
+                            android:layout_width="30dp"
+                            android:layout_height="40dp"
+                            android:fontFamily="@font/iciel_gotham_medium"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/black_light" />
+
+
+                        <RelativeLayout
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="@dimen/padding_size_12dp"
+                                android:background="@drawable/circle_white"
+                                android:padding="@dimen/margin_size_12dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="19dp"
+                                android:text="+" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnUpdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:background="@drawable/curved_green"
+                        android:fontFamily="@font/iciel_gotham_medium"
+                        android:text="Update"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/btnDelete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="@dimen/margin_size_8dp"
+                        android:background="@drawable/curved_red"
+                        android:fontFamily="@font/iciel_gotham_medium"
+                        android:text="Delete"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>
