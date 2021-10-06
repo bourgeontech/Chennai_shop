@@ -191,7 +191,7 @@ public class OrderDetailsActivity extends BaseActivity implements View.OnClickLi
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://day2night.in/shop/orderAcceptDecline.php",
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://estore.day2night.in/shop/orderAcceptDecline.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -254,7 +254,7 @@ public class OrderDetailsActivity extends BaseActivity implements View.OnClickLi
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://day2night.in/shop/insertToDelivery.php",
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://estore.day2night.in/shop/insertToDelivery.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -305,7 +305,7 @@ public class OrderDetailsActivity extends BaseActivity implements View.OnClickLi
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://day2night.in/shop/findNearestDboy.php",
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://estore.day2night.in/shop/findNearestDboy.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -372,7 +372,7 @@ public class OrderDetailsActivity extends BaseActivity implements View.OnClickLi
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://day2night.in/shop/CustomerPickup.php",
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://estore.day2night.in/shop/CustomerPickup.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -446,7 +446,7 @@ public class OrderDetailsActivity extends BaseActivity implements View.OnClickLi
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://day2night.in/shop/orderProductList.php",
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://estore.day2night.in/shop/orderProductList.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -631,7 +631,7 @@ public class OrderDetailsActivity extends BaseActivity implements View.OnClickLi
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://day2night.in/shop/deliveryStatusUpdate.php",
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://estore.day2night.in/shop/deliveryStatusUpdate.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -687,7 +687,7 @@ public class OrderDetailsActivity extends BaseActivity implements View.OnClickLi
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://day2night.in/delivery/Home/findNearestdboy.php",
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://estore.day2night.in/delivery/Home/findNearestdboy.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -742,7 +742,7 @@ public class OrderDetailsActivity extends BaseActivity implements View.OnClickLi
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://day2night.in/shop/deleteOrder.php",
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://estore.day2night.in/shop/deleteOrder.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

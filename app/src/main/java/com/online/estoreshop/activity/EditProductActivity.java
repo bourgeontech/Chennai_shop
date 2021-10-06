@@ -296,7 +296,7 @@ public class EditProductActivity extends BaseActivity implements View.OnClickLis
         }
 
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://day2night.in/shop/updateExistProduct.php",
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://estore.day2night.in/shop/updateExistProduct.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

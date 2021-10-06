@@ -129,7 +129,7 @@ public class ViewProductActivity extends BaseActivity implements View.OnClickLis
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://day2night.in/shop/deleteProduct.php",
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://estore.day2night.in/shop/deleteProduct.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
